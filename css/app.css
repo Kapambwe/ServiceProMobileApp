@@ -1,0 +1,80 @@
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Hardened Accessibility & Large Text Mode */
+.servicepro-large-text {
+    font-size: 120% !important;
+}
+
+.servicepro-large-text .rz-button, 
+.servicepro-large-text .quick-action-card,
+.servicepro-large-text .rz-textbox,
+.servicepro-large-text .rz-dropdown {
+    font-size: 1.15rem !important;
+    min-height: 52px !important;
+}
+
+/* Touch Target Hardening - All Tappable Elements >= 48px */
+.rz-button, .rz-selectable, .quick-action-card, .servicepro-bottom-nav .nav-item {
+    min-height: 48px !important;
+    min-width: 48px !important;
+}
+
+/* Quick Action Cards - Bold Visual Icons & Visual Feedback */
+.quick-action-card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    user-select: none;
+    background: #ffffff;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+}
+
+.quick-action-card:active {
+    transform: scale(0.96);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* High Contrast Status Badges */
+.rz-badge-success {
+    background-color: #15803d !important; /* Green */
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.85rem !important;
+}
+
+.rz-badge-info {
+    background-color: #1d4ed8 !important; /* Blue */
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.85rem !important;
+}
+
+.rz-badge-warning {
+    background-color: #b45309 !important; /* Yellow/Amber */
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.85rem !important;
+}
+
+.rz-badge-danger {
+    background-color: #b91c1c !important; /* Red */
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.85rem !important;
+}
+
+/* Large Accessible Checkboxes for Checklist Progress */
+.rz-chkbox-box {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 6px !important;
+}
+
+.rz-chkbox-icon {
+    font-size: 20px !important;
+}
